@@ -1,8 +1,9 @@
 import Swal from 'sweetalert2';
 
-const btn = document.getElementById('dontClickBtn');
+const dontClickBtn = document.getElementById('dontClickBtn');
+const chatbotBtn = document.getElementById('chatbotBtn');
 
-btn.addEventListener('click', () => {
+dontClickBtn.addEventListener('click', () => {
   Swal.fire({
     title: '경고!',
     text: '클릭하지 말라고 했잖아요!',
@@ -12,4 +13,8 @@ btn.addEventListener('click', () => {
     background: '#d8f3dc',
     color: '#1b4332',
   });
+});
+
+chatbotBtn.addEventListener('click', () => {
+  window.location.href = 'chatbot.html';
 });

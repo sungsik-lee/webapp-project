@@ -1,0 +1,98 @@
+/* 기본 배경 및 폰트 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+/* 전체 컨테이너 */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* 타이틀 */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* 채팅 박스 */
+.chat-box {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background-color: #b7e4c7;
+  border-radius: 16px;
+  padding: 16px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #95d5b2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메시지 공통 스타일 */
+.message {
+  margin: 8px 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* 사용자 메시지 */
+.user {
+  background-color: #95d5b2;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* 챗봇 메시지 */
+.bot {
+  background-color: #74c69d;
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* 입력창 + 버튼 */
+.input-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* 텍스트 입력창 */
+input[type="text"] {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #95d5b2;
+  font-size: 1rem;
+}
+
+/* 버튼 */
+button {
+  background-color: #95d5b2;
+  color: #081c15;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #74c69d;
+}
