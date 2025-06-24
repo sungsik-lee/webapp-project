@@ -2,6 +2,9 @@ import Swal from 'sweetalert2';
 
 const dontClickBtn = document.getElementById('dontClickBtn');
 const chatbotBtn = document.getElementById('chatbotBtn');
+const inputBtn = document.getElementById('inputBtn');
+
+
 
 dontClickBtn.addEventListener('click', () => {
   Swal.fire({
@@ -17,4 +20,8 @@ dontClickBtn.addEventListener('click', () => {
 
 chatbotBtn.addEventListener('click', () => {
   window.location.href = 'chatbot.html';
+});
+
+inputBtn.addEventListener('click', () => {
+  window.location.href = 'basicInputs.html';
 });
